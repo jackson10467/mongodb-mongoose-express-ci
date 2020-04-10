@@ -9,5 +9,6 @@ const User = new Schema(
     },
     { timestamps: true },
 )
-
+//mongodb+srv://jackson:jackson1@cluster0-y0rqv.mongodb.net/projectsDatabase?retryWrites=true&w=majority
+//heroku config:set PROD_MONGODB="mongodb+srv://jackson:jackson1@cluster0-y0rqv.mongodb.net/projectsDatabase?retryWrites=true&w=majority"
 module.exports = mongoose.model('users', User)
